@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inscripción Universidad Martí</title>
+	<link rel="stylesheet" href="template/style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+   <script src="js/planes.js"></script>
+</head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inscripción Universidad Martí</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+   <script src="../js/planes.js"></script>
+</head>
+<body class="body">
+	<div id="header">
+		<img src="template/img/logoUM.png">
+	</div>
+	<div class="encabezado">
+		<h2><b>Formulario de Inscripción</b></h2>
+	</div>
+	<br><br>
+    <div style="text-align:center;">
+        <a id="botones_inicio" href="index.php"><b><span class="glyphicon glyphicon-home"></span>  Página de inicio</b></a>
+    </div>
+</html>
+<body class="body">
+<form name="confirmacion" method="POST" id="form" action="guardarDatos.php" enctype="multipart/form-data">
+	<div class="encabezado_section">
+		<h3><b>1. Datos del alumno</b></h3>
+	</div>
+
+	<div class="sheet floaty">
+		<legend><b>Interés académico</b></legend>
+		<div class="multi_input_line">
+			<fieldset class="two_line_labeled_input">
+				<label class="" >Nivel académico:</label>
+				<label style="color:#6f1d46;">Maestría</label>
+                <input type="hidden" name="nivel_input" value="2">
+			</fieldset>
+
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Plan de interés:</label>
+                <label style="color:#6f1d46;">Ingeniería Ambiental</label> 
+                <input type="hidden" name="plan_input" value="6">
+			</fieldset>
+
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Modalidad:</label>
+				<label style="color:#6f1d46;">Presencial Xalapa (Sabatino)</label>
+                <input type="hidden" name="modalidad_input" value="14">
+			</fieldset>
+		</div>
+	</div>
+
+	<div class="sheet floaty">
+		<legend><b>Datos personales</b></legend>
+
+		<div class="multi_input_line">
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Apellido paterno:</label>
+				<label style="color:#6f1d46;">Rivera</label>
+                <input type="hidden" name="paterno_input" value="Rivera">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Apellido materno:</label>
+				<label style="color:#6f1d46;">Barrera</label>
+                <input type="hidden" name="materno_input" value="Barrera">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Nombre (s):</label>
+				<label style="color:#6f1d46;">Itzae Guadalupe</label>
+                <input type="hidden" name="nombre_input" value="Itzae Guadalupe">
+			</fieldset>
+		</div>
+
+		<div class="multi_input_line">
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">País de nacionalidad:</label>
+				<label style="color:#6f1d46;">México</label>
+                <input type="hidden" name="nacionalidad_input" value="México">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Sexo:</label>
+				<label style="color:#6f1d46;">Mujer</label>
+                <input type="hidden" name="sexo_input" value="2">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">CURP:</label>
+				<label style="color:#6f1d46;">RIBI970819MVZVRT01</label>
+                <input type="hidden" name="curp_input" value="RIBI970819MVZVRT01">
+			</fieldset>
+		</div>
+
+	</div>
+
+	<div class="sheet floaty">
+		<legend><b>Contacto</b></legend>
+
+		<div class="multi_input_line">
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Correo electrónico:</label>
+				<label style="color:#6f1d46;">itzaee19@gmail.com</label>
+                <input type="hidden" name="email_input" value="itzaee19@gmail.com">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Teléfono celular:</label>
+				<label style="color:#6f1d46;">2281776338</label>
+                <input type="hidden" name="movil_input" value="2281776338">
+			</fieldset>
+		</div>
+	</div>
+
+
+	<div class="sheet floaty">
+		<legend><b>Domicilio actual</b></legend>
+
+		<div class="multi_input_line">
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Calle y número:</label>
+				<label style="color:#6f1d46;">Reforma #6</label>
+                <input type="hidden" name="calle_input" value="Reforma #6">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Colonia:</label>
+				<label style="color:#6f1d46;">Centro</label>
+                <input type="hidden" name="colonia_input" value="Centro">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Código postal:</label>
+				<label style="color:#6f1d46;">91380</label>
+                <input type="hidden" name="cp_input" value="91380">
+			</fieldset>
+		</div>
+
+		<div class="multi_input_line">
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">País:</label>
+				<label style="color:#6f1d46;">México</label>
+                <input type="hidden" name="pais_input" value="México">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Estado:</label>
+				<label style="color:#6f1d46;">30</label>
+                <input type="hidden" name="estado_input" value="30">
+			</fieldset>
+			<fieldset class="two_line_labeled_input">
+				<label class="is- ">Ciudad:</label>
+				<label style="color:#6f1d46;">La Concepción</label>
+                <input type="hidden" name="ciudad_input" value="La Concepción">
+			</fieldset>
+		</div>
+
+	</div>
+
+	<div class="encabezado_section">
+		<h3><b>2. Datos del tutor legal</b></h3>
+	</div>
+        
+            <div id="content" style="display: block" class="sheet floaty">
+            <div class="multi_input_line">
+			<fieldset>
+                <label style="color:#6f1d46;"> Soy mayor de edad y no tengo tutor legal </label>
+                <input type="hidden" name="mayoria_input" value=1>
+            </fieldset>
+            </div>
+            </div>
+            
+<!---------------DATOS DE FACTURACIÓN----------------------->
+	<div class="encabezado_section">
+		<h3><b>3. Datos de pago y facturación</b></h3>
+	</div>
+
+	<div class="sheet floaty">
+		<legend><b>Facturación</b></legend>
+        
+			<fieldset>
+                <label style="color:#6f1d46;"> No requiero facturación </label>
+                <input type="hidden" name="csf_necesaria" value="0" >
+            </fieldset>
+            	</div>
+
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
+<!---------------PROMOCIONES Y BECAS----------------------->
+<!--------------------------------------------------------->
+<!--------------------------------------------------------->
+
+
+    <div class="encabezado_section">
+		<h3><b>4. Promociones y Becas</b></h3>
+	</div>
+
+	<div class="sheet floaty">
+		<legend><b>Promoción y/o beca seleccionada</b></legend>
+        
+                <fieldset>
+                    <label style="color:#6f1d46;"> PROMO FEB 2025 POS  - 50% INSCR. y 50% BECA </label>
+                </fieldset>	</div>
+    
+
+    <input type="hidden" name="comprobatorio_necesario" value="0" ><!------------------------------------>
+<!------------------------------------>
+<!--SECCIÓN PARA SUBIR DOCUMENTACIÓN-->
+<!------------------------------------>
+<!------------------------------------>
+
+    <div class="encabezado_section">
+		<h3><b>5. Subir Documentación</b></h3>
+	</div>
+
+
+	<div class="sheet floaty">
+		<legend><b>Documentos</b></legend>
+        <label style="text-align:justify; color:#930000;">Es necesario que subas tu documentación para confirmar tu proceso de inscripción.
+            <br>Estos documentos serán validados y en caso de que exista algún problema le notificaremos vía email.<br><br>
+
+            Requerimientos: Documentos originales escaneados en formato PDF.
+        </label>
+        <br><br><br>
+
+        <label style="color:#6f1d46; text-align:left; font-size:18px;" class="is-required"> Acta de nacimiento</label><br>
+                <input type="file" name="1" required accept=".pdf">
+                <br><label style="color:#6f1d46; text-align:left; font-size:18px;" class="is-required"> CURP</label><br>
+                <input type="file" name="4" required accept=".pdf">
+                <br><label style="color:#6f1d46; text-align:left; font-size:18px;" class="is-required"> Certificado de estudios de licenciatura legalizado</label><br>
+                <input type="file" name="11" required accept=".pdf">
+                <br>			
+	</div>
+<!-------------------------------------------->
+<!-------------------------------------------->
+<!--TERMINA SECCIÓN PARA SUBIR DOCUMENTACIÓN-->
+<!-------------------------------------------->
+<!-------------------------------------------->
+
+    <!--ESTA SECCIÓN SE HABILITA SÓLO SI SE REQUIRE DE FATURACIÓN-->
+    <div id="content_csf" style="display: none" class="sheet floaty">
+		<legend><b>Constancia de Situación Fiscal</b></legend>
+	</div>
+<!--------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------->
+<!---------------------------------DESGLOSE DE COSTOS DE INSCRIPCIÓN--------------------------->
+<!--------------------------------------------------------------------------------------------->
+<!--------------------------------------------------------------------------------------------->
+
+        
+    <div class="sheet floaty">
+	<legend><b>Desglose de costos de inscripción</b></legend>
+
+	<div class="multi_input_line">
+		<fieldset class="two_line_labeled_input">
+			<label>Concepto:</label>
+			<div class="concepto-monto">
+                    <span class="concepto">Inscripción</span>
+                    </div><div class="concepto-monto">
+                    <span class="concepto">Servicios administrativos</span>
+                    </div><div class="concepto-monto">
+                    <span class="concepto">Colegiatura</span>
+                    </div>		</fieldset>
+
+		<fieldset class="two_line_labeled_input">
+			<label style="text-align:right;">Monto:</label>
+			<div class="concepto-monto" style="text-align:right;"><span class="monto">$1,500.00</span>
+                            <b style= "font-size:12px;" class="monto-descuento"></b>
+                            <br>
+                            <b style="color:green;"><b style="color:white;">_</b>PROMO FEB 2025 POS  - 50% INSCR. y 50% BECA <b style="color:red;"> -$750.00
+                            </b></b></div><div class="concepto-monto" style="text-align:right;"><span class="monto">$1,000.00</span></div><div class="concepto-monto" style="text-align:right;"><span class="monto">$3,000.00</span>
+                            <b style= "font-size:12px;" class="monto-descuento"></b>
+                            <br>
+                            <b style="color:green;"><b style="color:white;">_</b>PROMO FEB 2025 POS  - 50% INSCR. y 50% BECA <b style="color:red;"> -$1,500.00
+                            </b></b></div>          	
+        </fieldset>
+      
+        </div>
+
+        <fieldset>
+                <input type="hidden" name="descuento_inscripcion" value=0.5>
+                        <input type="hidden" name="descuento_colegiatura" value=0.5><input type="hidden" name="promo_input" value=49><input type="hidden" name="beca_input" value=0><div style="text-align:right;">
+                        <label style="color:blue;"><b style="color:white;">__</b>TOTAL:<b style="color:white;">_</b>$3,250.00</label>
+                        <input type="hidden" name="monto_programado" value=3250>
+                    </div>		</fieldset>
+        </div>
+
+
+
+    <!--------------------------------------------------------------------------------------------->
+    <!--------------------------------------------------------------------------------------------->
+	
+
+    <div class="sheet floaty">
+		<legend><b>Paso siguiente:</b></legend>
+		<div class="multi_input_line">
+			<fieldset class="two_line_labeled_input">
+				<p style="font-size:15px; text-align:justify;">Al hacer clic en el botón de abajo, sus datos quedarán registrados, por lo cual es importante que verifique que se hayan capturado correctamente. <br>Una vez que haya revisado que los datos sean correctos, de clic en el botón, para proceder a la verificación de su correo electrónico.
+                <br>Así mismo, se le enviarán los datos bancarios para que pueda realizar su pago y se le dará a conocer el monto de su colegiatura mensual.<br>
+                Posteriormente, deberá subir su comprobante de pago en formato PDF. Una vez que este último haya sido validado, le notificaremos mediante correo electrónico su matrícula.<br>
+                Cuando todo lo anterior esté en orden, su inscripción se dará por concluida y le generaremos un correo electrónico institucional que servirá como medio oficial de comunicación entre Universidad Martí y usted.</p>
+
+               
+                <br>
+                <label>¿Cómo te enteraste de Universidad Martí?</label>
+                <select required name="how_found">
+                    <option value="">-- Seleccione una opción --</option>
+                    <option value="Redes sociales">Redes sociales</option>
+                    <option value="Busqueda web">Búsqueda web</option>
+                    <option value="Publicidad">Publicidad (espectacular, volantes, eventos, etc.)</option>
+                    <option value="Recomendación">Recomendación</option>
+                </select>
+                <br>
+			</fieldset>
+		</div>
+
+        <div style="text-align:center;">   
+            <input type="checkbox" name="aviso_privacidad" value="1" required>
+            <label>He leído y estoy informado del <a style="color:#ff9933;" href="template/files/AVISO_DE_PRIVACIDAD.PDF">aviso de privacidad</a></label>
+            <br>
+            <input type="checkbox" name="aceptar_pasos" value="1" required>
+            <label> He leído y estoy informado de los siguientes pasos a seguir</label>
+        </div>
+	</div>
+<br>
+
+<div style="text-align:center;">
+    <input id="agregar" type="submit" name="verificar" value="Aceptar"/>
+</div>
+<br><br>
+
+</form>
+
+
+</body>
+
+
+<script>
+   const phoneInputField = document.querySelector("#phone");
+   const phoneInput = window.intlTelInput(phoneInputField, {
+   	preferredCountries: ["mx"],
+     utilsScript:
+       "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js",
+   });
+    
+</script>
+
+
+</html>
