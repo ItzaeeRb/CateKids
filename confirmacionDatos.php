@@ -18,7 +18,7 @@
 		<h2><b>Confirmación de datos</b></h2>
 </div>
 
-<form name="f1" method="POST" id="form" action="confirmacionDatos.php">
+<form name="f1" method="POST" id="form" action="guardarDatos.php">
 	<div class="encabezado_section">
 		<h3><b>1. Datos del niño</b></h3>
 	</div>
@@ -52,17 +52,17 @@
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Apellido paterno:</label>
                 <label><?php echo $paterno; ?></label>
-				<input type="hidden" name="apellido_paterno"  required>
+				<input type="text" name="apellido_paterno" value="<?php echo $paterno; ?>" required>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Apellido materno:</label>
                 <label><?php echo $materno; ?></label>
-				<input type="hidden" name="apellido_materno"  required>
+				<input type="text" name="apellido_materno" value="<?php echo $materno; ?>" required>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Nombre (s):</label>
                 <label><?php echo $nombre; ?></label>
-				<input type="hidden" name="nombre"  required>
+				<input type="text" name="nombre" value="<?php echo $nombre; ?>" required>
 			</fieldset>
 		</div>
 
@@ -70,17 +70,17 @@
 		<fieldset class="two_line_labeled_input">
 			<label class="is-required">Fecha de nacimiento:</label>
             <label><?php echo $fechaNacimiento; ?></label>
-			<input type="hidden" name="fechaNacimiento" required>
+			<input type="text" name="fechaNacimiento" value="<?php echo $fechaNacimiento; ?>" required>
 		</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Sexo:</label>
                 <label><?php echo $sexo; ?></label>
-				<input type="hidden" name="sexo" required>
+				<input type="text" name="sexo" value="<?php echo $sexo; ?>" required>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">CURP:</label>
                 <label><?php echo $CURP; ?></label>
-				<input type="hidden" name="CURP" required>
+				<input type="text" name="CURP" value="<?php echo $CURP; ?>" required>
 			</fieldset>
 		</div>
 	</div>
@@ -97,17 +97,17 @@
 		<div class="multi_input_line">
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Apellido paterno:</label>
-				<input type="hidden" name="paterno_tutor">
+				<input type="text" name="paterno_tutor" value="<?php echo $paterno_tutor; ?>" required>
                 <label><?php echo $paterno_tutor; ?></label>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Apellido materno:</label>
-				<input type="hidden" name="materno_tutor">
+				<input type="text" name="materno_tutor" value="<?php echo $materno_tutor; ?>" required>
                 <label><?php echo $materno_tutor; ?></label>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Nombre (s):</label>
-				<input type="hidden" name="nombre_tutor">
+				<input type="text" name="nombre_tutor" value="<?php echo $nombre_tutor; ?>" required>
                 <label><?php echo $nombre_tutor; ?></label>
 			</fieldset>
 		</div>
@@ -120,12 +120,12 @@
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Correo electrónico:</label>
                 <label><?php echo $email; ?></label>
-				<input type="hidden" name="email" required>
+				<input type="text" name="email" value="<?php echo $email; ?>" required>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Teléfono celular:</label>
                 <label><?php echo $telefono; ?></label>
-				<input id="phone" type="hidden" name="phone" required/>
+				<input id="phone" type="text" name="phone" value="<?php echo $telefono; ?>" required/>
 			</fieldset>
 		</div>
 
@@ -134,17 +134,17 @@
 		<div class="multi_input_line">
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Calle y número:</label>
-				<input type="hidden" name="calle_numero" required>
+				<input type="text" name="calle_numero" value="<?php echo $calle; ?>" required>
                 <?php echo $calle; ?>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Colonia:</label>
-				<input type="hidden" name="colonia" required>
+				<input type="text" name="colonia" value="<?php echo $colonia; ?>" required>
                 <?php echo $colonia; ?>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Código postal:</label>
-				<input type="hidden" name="codigo_postal" required>
+				<input type="text" name="codigo_postal" value="<?php echo $codigo_postal; ?>" required>
                 <?php echo $codigo_postal; ?>
 			</fieldset>
 		</div>
@@ -152,17 +152,17 @@
 		<div class="multi_input_line">
 		<fieldset class="two_line_labeled_input">
 			<label class="is-required">País de nacionalidad:</label>
-            <input type="hidden" name="pais_domicilio" required>
+            <input type="text" name="pais_domicilio" value="<?php echo $pais; ?>" required>
             <?php echo $pais; ?>
 		</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Estado:</label>
-                <input type="hidden" name="estado" required>
+                <input type="text" name="estado" value="<?php echo $estado; ?>" required>
                 <?php echo $estado; ?>
 			</fieldset>
 			<fieldset class="two_line_labeled_input">
 				<label class="is-required">Ciudad:</label>
-				<input type="hidden" name="ciudad" required>
+				<input type="text" name="ciudad" value="<?php echo $ciudad; ?>" required>
                 <?php echo $ciudad; ?>
 			</fieldset>
 		</div>
@@ -184,11 +184,11 @@
         <br><br>
 
         <label style="color:#6a9cd4; font-size:18px;" class="is-required"> Acta de nacimiento del niño</label><br>
-                <input type="file" name="1" required accept=".pdf">
+                <input type="file" name="1" accept=".pdf">
                 <br><label style="color:#6a9cd4; font-size:18px;" class="is-required"> Fe de bautizmo del niño</label><br>
-                <input type="file" name="2" required accept=".pdf">
+                <input type="file" name="2" accept=".pdf">
                 <br><label style="color:#6a9cd4; font-size:18px;" class="is-required"> Credencial de elector del Padre / tutor</label><br>
-                <input type="file" name="3" required accept=".pdf">
+                <input type="file" name="3" accept=".pdf">
                 <br>			
 	</div>
 
