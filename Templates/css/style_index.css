@@ -30,7 +30,7 @@
   }
   
   .body{
-      background-color: whitesmoke; 
+    background-color: #f8c471;
   }  
   
   .body-admin{
@@ -47,8 +47,8 @@
   
   .encabezado{
       text-align: center;
-      color: #24a3f8;
-  }
+      color: #c0392b;
+    }
   
   .encabezado-admin{
       text-align: center;
@@ -60,7 +60,7 @@
       width: 50%;
       margin: auto auto;
       text-align: justify;
-      color:#6a9cd4;
+      color:#e74c3c;
   }
   
   .content{
@@ -200,7 +200,7 @@
   
       #agregar{
           font-size:20px; 
-          background-color:#24a3f8; 
+          background-color:#c0392b; 
           border:none; 
           border-radius: 5px 5px 5px 5px; 
           padding: 6px 6px 6px 6px; 
