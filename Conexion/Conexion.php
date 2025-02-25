@@ -4,7 +4,7 @@
 	if(!$con){
 		die("ERROR: Couldn't connect to database");
     }else{
-        echo "Conexión exitosa!";
+        echo "";
     }
 ?>
 

@@ -57,12 +57,25 @@ mysqli_query($con, $insertSQL_Tutor);
 mysqli_query($con, $insertSQL_Alumno);
 mysqli_query($con, $insertSQL_Domicilio);
 
+echo "<script src='https://cdn.jsdelivr.net/npm/sweetalert2@11'></script>";
 
 
 if($insertSQL_Domicilio){
-    echo '<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Bien hecho, los datos han sido agregados correctamente.</div>';
+    echo "<script>
+    Swal.fire({
+        icon: 'success',
+        title: 'Éxito',
+        text: 'Los datos han sido agregados correctamente.',
+    });
+</script>";
 }else{
-    echo '<div class="alert alert-danger alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Error, no se pudieron registrar los datos.</div>';
+    echo "<script>
+        Swal.fire({
+            icon: 'error',
+            title: 'Error',
+            text: 'No se pudieron registrar los datos.',
+        });
+    </script>";
 }
 
 //---------------------------------------------------------------------------
